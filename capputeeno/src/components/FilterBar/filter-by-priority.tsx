@@ -34,6 +34,7 @@ const Priority = styled.ul`
 	position: absolute;
 	width: max-content;
 	padding: 12px 16px;
+	z-index: 999;
 
 	background: #ffffff;
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
