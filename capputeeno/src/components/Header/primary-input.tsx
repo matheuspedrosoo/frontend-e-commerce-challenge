@@ -1,11 +1,12 @@
-import { InputHTMLAttributes } from 'react'
 import { styled } from 'styled-components'
+import { ChangeEvent, InputHTMLAttributes } from 'react'
 import { SearchIcon } from '../Icons/search-icon'
 
 export const PrimaryInput = styled.input`
 	width: 352px;
 	border-radius: 8px;
 	border: none;
+	outline: none;
 	padding: 10px 16px;
 
 	background-color: var(--bg-secondary);
@@ -28,12 +29,22 @@ export const InputContainer = styled.div`
 	}
 `
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+	value: string
+	handleChange: (value: string) => void
+}
 
-export function PrimaryInputWSearchIcon(props: InputProps) {
+export function PrimaryInputWSearchIcon({ handleChange, ...props }: InputProps) {
+	const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+		handleChange(e.target.value)
+	}
+
 	return (
 		<InputContainer>
-			<PrimaryInput {...props} />
+			<PrimaryInput
+				{...props}
+				onChange={handleInputChange}
+			/>
 			<SearchIcon />
 		</InputContainer>
 	)
