@@ -1,23 +1,22 @@
 'use client'
+import styled from 'styled-components'
+import { DefaultPageLayout } from '@/components/DefaultPageLayout/default-page-layout'
 import { FilterBar } from '@/components/FilterBar'
 import { ProductList } from '@/components/Products'
-import styled from 'styled-components'
 
 const PageWrapper = styled.main`
-	min-height: 100vh;
-	padding: 12px 24px;
-	background-color: var(--bg-primary);
-
-	@media (min-width: ${({ theme }) => theme.desktopBreakpoint}) {
-		padding: 34px 160px;
-	}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `
 
 export default function Home() {
 	return (
-		<PageWrapper>
-			<FilterBar />
-			<ProductList />
-		</PageWrapper>
+		<DefaultPageLayout>
+			<PageWrapper>
+				<FilterBar />
+				<ProductList />
+			</PageWrapper>
+		</DefaultPageLayout>
 	)
 }
