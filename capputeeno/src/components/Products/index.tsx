@@ -19,6 +19,7 @@ export function ProductList() {
 			{data?.map((product) => (
 				<ProductCard
 					key={product.id}
+					id={product.id}
 					title={product.name}
 					price={product.price_in_cents}
 					image={product.image_url}
