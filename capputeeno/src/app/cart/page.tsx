@@ -28,6 +28,7 @@ const CartListContainer = styled.div`
 		line-height: 150%;
 		text-transform: uppercase;
 		color: var(--text-dark-2);
+		margin-top: 24px;
 	}
 
 	p {
