@@ -5,10 +5,10 @@ import axios, { AxiosPromise } from 'axios'
 import { useDeferredValue } from 'react'
 import { useFilter } from './useFilter'
 
-// const API_URL = process.env.NEXT_PUBLIC_API_URL as string
+const API_URL = (process.env.NEXT_PUBLIC_API_URL as string) || 'http://localhost:3333'
 
 const fetcher = (query: string): AxiosPromise<ProductsFetchResponse> => {
-	return axios.post('http://localhost:3333', {
+	return axios.post(API_URL, {
 		query
 	})
 }
