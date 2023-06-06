@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Capputeeno
 
-## Getting Started
+Welcome! This respostitory contains my solution for [Rocketseat´s](https://www.rocketseat.com.br/ignite?utm_source=influencer&utm_medium=publipost&utm_campaign=lead&utm_term=ignite&utm_content=lead-ignite-publipost-organic-cupom_KIPPERDEV-none-none-none-none-redes_kipperdev&referral=kipperdev&coupon=KIPPERDEV@IGNITE) open source [Frontend Challenge](https://github.com/Rocketseat/frontend-challenge).
 
-First, run the development server:
+![Prototype](../.github/prototype.png)
+
+# 🧠 About
+
+The goal with this project is to help other who are searching for an opportunity as Frontend Developer, through the tutorial that i made on Youtube, i wish to help you to train your Frontend skills and learning new ways of solving technical challenges.
+
+The challenge is to implement an e-commerce for the sale of mugs and t-shirts that should have the following functionalities:
+
+- [x] Filter products by category
+- [x] Search by product name
+- [x] Add and remove products from cart
+- [ ] Product catalog with pagination
+- [ ] Checkout page
+
+## 📋 Requirements
+
+- Follow [this prototype](https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449)
+- Use Next.js and Typescript
+- Create components with styled-components
+- consume from the provided **GraphQL API**
+
+## 🖥️ Installation
+
+### Frontend
+
+1. Clone this repo
+
+```bash
+git clone https://github.com/Fernanda-Kipper/challenge-frontend.git
+```
+
+2. Go to the project folder
+
+```bash
+cd challenge-frontend
+cd capputeeno
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+3. Run Frontend
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the API
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Go to the API folder
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+cd challenge-frontend
+cd api
+```
 
-## Learn More
+3. Install dependencies
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm start
+```
